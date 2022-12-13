@@ -40,4 +40,4 @@ $(DEPS):
 include $(wildcard $(DEPS))
 
 
-.PHONY: all clean
+.PHONY: default clean
