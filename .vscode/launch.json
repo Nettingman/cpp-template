@@ -1,0 +1,101 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Build debug and run",
+        "preLaunchTask": "build_debug",
+        "type": "cppdbg",
+        "request": "launch",
+        "args": [
+          ""
+        ],
+        "stopAtEntry": false,
+        "cwd": "${workspaceRoot}",
+        "environment": [],
+        "program": "${workspaceRoot}/bin/program",
+        "internalConsoleOptions": "openOnSessionStart",
+        "MIMode": "gdb",
+        "miDebuggerPath": "${env:gdb}",
+        "externalConsole": false,
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      },
+      {
+        "name": "Build release and run",
+        "preLaunchTask": "build_release",
+        "type": "cppdbg",
+        "request": "launch",
+        "args": [
+          ""
+        ],
+        "stopAtEntry": false,
+        "cwd": "${workspaceRoot}",
+        "environment": [],
+        "program": "${workspaceRoot}/bin/program",
+        "internalConsoleOptions": "openOnSessionStart",
+        "MIMode": "gdb",
+        "miDebuggerPath": "${env:gdb}",
+        "externalConsole": false,
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      },
+      {
+        "name": "Clean build debug and run",
+        "preLaunchTask": "clean_build_debug",
+        "type": "cppdbg",
+        "request": "launch",
+        "args": [
+          ""
+        ],
+        "stopAtEntry": false,
+        "cwd": "${workspaceRoot}",
+        "environment": [],
+        "program": "${workspaceRoot}/bin/program",
+        "internalConsoleOptions": "openOnSessionStart",
+        "MIMode": "gdb",
+        "miDebuggerPath": "${env:gdb}",
+        "externalConsole": false,
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      },
+      {
+        "name": "Clean build release and run",
+        "preLaunchTask": "clean_build_release",
+        "type": "cppdbg",
+        "request": "launch",
+        "args": [
+          ""
+        ],
+        "stopAtEntry": false,
+        "cwd": "${workspaceRoot}",
+        "environment": [],
+        "program": "${workspaceRoot}/bin/program",
+        "internalConsoleOptions": "openOnSessionStart",
+        "MIMode": "gdb",
+        "miDebuggerPath": "${env:gdb}",
+        "externalConsole": false,
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ]
+      }
+    ]
+  }

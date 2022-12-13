@@ -1,0 +1,57 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "build_debug",
+            "command": "make",
+            "args": ["debug"],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "build_release",
+            "command": "make",
+            "args": ["release"],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "cleanup",
+            "command": "make",
+            "args": ["clean"],
+            "options": {
+                "cwd": "${workspaceRoot}"
+            },
+            "group": "build"
+        },
+        {
+            "label": "clean_build_debug",
+            "dependsOrder" : "sequence",
+            "dependsOn": [
+                "cleanup",
+                "build_debug"
+            ],
+            "group": {
+                "kind": "build"
+            }
+        },
+        {
+            "label": "clean_build_release",
+            "dependsOrder" : "sequence",
+            "dependsOn": [
+                "cleanup",
+                "build_release"
+            ],
+            "group": {
+                "kind": "build"
+            }
+        },
+    ],
+    "version": "2.0.0"
+}
