@@ -44,4 +44,4 @@ $(DEPS):
 include $(wildcard $(DEPS))
 
 
-.PHONY: default clean
+.PHONY: all clean
